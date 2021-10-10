@@ -1,0 +1,38 @@
+.s2 {
+    &__title {
+        max-width: 930px;
+        margin-bottom: 60px;
+
+        span {
+            color: $red1;
+        }
+    }
+
+    &__lead {
+        margin-bottom: 50px;
+    }
+
+    &__blocks {
+        margin-bottom: 102px;
+    }
+
+    @media (max-width: 991px){
+        &__blocks {
+            margin-bottom: 50px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__title,
+        &__lead {
+            margin-bottom: 40px;
+        }
+
+        &__blocks {
+            width: calc(100% + 60px);
+            margin-left: -30px;
+            border-radius: 0;
+            margin-bottom: 12px;
+        }        
+    }
+}

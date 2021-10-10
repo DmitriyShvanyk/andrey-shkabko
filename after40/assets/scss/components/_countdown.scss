@@ -1,0 +1,95 @@
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+    &__item {
+        position: relative;
+        padding-bottom: 0px;      
+    }
+
+    &__num{
+        font-size: 90px;
+        font-weight: 700;
+        display: block;
+    }
+
+    &__caption {
+        position: absolute;
+        top: 96%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+    }    
+
+    &__dots {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 80px;
+        font-weight: 700;
+        color:  #C70136;
+        margin-top: -8px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__line{
+        height: 137px;
+        width: 2px;
+        background-color: #C70136;
+        margin: 0 60px;
+    }
+
+    @media (max-width: 991px) {
+        &__num,
+        &__dots{
+            font-size: 70px;
+        }
+    
+        &__dots {
+            margin-top: -5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+        &__line{
+            height: 80px;
+            margin: 0 30px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__num,
+        &__dots{
+            font-size: 35px;
+        }
+    
+        &__caption {
+            top: 114%;
+            font-size: 14px;
+        }    
+    
+        &__dots {
+            margin-top: -3px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    
+        &__line{
+            height: 50px;
+        }
+    }
+
+    @media (max-width: 374px) {    
+        &__dots {
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+    
+        &__line{
+            margin: 0 20px;
+        }
+    }
+}

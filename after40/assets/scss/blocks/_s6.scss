@@ -1,0 +1,35 @@
+.s6 {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    .blocks {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 220px;
+            background-color: #C70136;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            pointer-events: none;
+        }
+    }
+
+    .blocks__inner {
+        padding-top: 60px;
+        padding-bottom: 24px;
+    }
+
+    @media (max-width:767px){
+        .s2__title{
+            br{
+                display: none;
+            }
+        }
+    }
+}

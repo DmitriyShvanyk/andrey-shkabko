@@ -1,0 +1,24 @@
+.s1 {
+    margin-top: -31px;
+
+    &__container {
+        padding-top: 0;
+        max-width: 1200px;
+    }
+
+    &__alert{
+        margin-bottom: 70px;
+    }
+
+    @media (max-width: 767px) {
+        &{
+            margin-top: -5.6%;
+        }
+
+        &__alert{            
+            padding-top: 50px;
+            padding-bottom: 25px;
+            margin-bottom: 10px;
+        }
+    }
+}

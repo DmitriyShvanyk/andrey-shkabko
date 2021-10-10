@@ -1,0 +1,31 @@
+.s4 {
+    margin-top: 0;
+
+    &__container {
+        padding-top: 58px;
+        max-width: 1200px;
+    }
+
+    &__alert {        
+        padding-top: 46px;
+        margin-bottom: 70px;
+    }
+
+    @media (max-width:991px) {
+        &__alert {        
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width:767px) {
+        &__container {
+            padding-top: 20px;
+        }
+
+        &__alert {        
+            margin-bottom: 10px;
+            padding-top: 30px;
+            padding-bottom: 25px;
+        }
+    }
+}

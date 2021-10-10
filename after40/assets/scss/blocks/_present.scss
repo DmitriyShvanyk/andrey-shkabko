@@ -1,0 +1,119 @@
+.present {
+    &__container {
+        position: relative;
+        padding-bottom: 150px;
+    }
+
+    &__title {
+        margin-bottom: 90px;
+        max-width: 560px;
+
+        span {
+            color: $red1;
+        }
+    }
+
+    &__box {
+        max-width: 600px;
+        min-height: 376px;
+        margin: 0 auto;
+        width: 100%;
+        background-color: $white;
+        border: 2px solid #E0BB61;
+        box-shadow: 0px 5px 30px rgba(208, 142, 94, .7);
+        border-radius: 10px;
+        position: relative;
+        left: -94px;
+        padding: 85px 60px;
+        z-index: 2;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 9;
+
+        p+p {
+            margin-top: 58px;
+        }
+
+        p:nth-of-type(2) {
+            max-width: 368px;
+        }
+    }
+
+    &__cd {
+        position: absolute;
+        top: 53%;
+        left: 70%;
+        transform: translateY(-50%);
+    }
+
+    &__decor-1,
+    &__decor-2 {
+        position: absolute;
+        pointer-events: none;
+    }
+
+    &__decor-1 {
+        top: 5%;
+        left: -5%;
+    }
+
+    &__decor-2 {
+        bottom: 0;
+        right: -5%;
+    }
+
+    @media (max-width: 1200px) {
+        &__box {
+            left: 0;
+        }
+    }
+
+    @media (max-width: 991px) {
+        &__box {
+            padding: 45px 30px 80px;
+            min-height: 250px;
+        }
+
+        &__cd {
+            top: auto;
+            bottom: -50%;
+            left: 70%;
+            max-height: 224px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__title {
+            margin-bottom: 55px;
+        }
+
+        &__box {
+            padding: 15px 30px 120px;
+            font-size: 20px;
+        }
+
+        &__content {
+            p+p {
+                margin-top: 38px;
+            }
+        }
+
+        &__cd {
+            left: 45%;
+        }
+
+        &__decor-1 {
+            top: 50%;
+            left: -10%;
+            max-height: 40%;
+        }
+    
+        &__decor-2 {
+            bottom: 50%;
+            right: -10%;
+            max-height: 40%;
+        }
+    }
+}

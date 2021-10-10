@@ -1,0 +1,114 @@
+.mc {
+    margin-top: -10px;
+
+    &__container {
+        padding-top: 1px;
+    }
+
+    &__how {
+        min-height: 585px;
+        padding: 0;
+
+        .how__title {
+            margin-bottom: 50px;
+        }
+
+        .how__content {
+            padding: 87px 0px 70px;
+        }
+
+        .how__pc{
+            top: 6.5%;
+            right: -95px;
+            max-height: 500px;
+        }
+    }
+
+    &__decor {
+        display: block;
+        min-height: 49px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &__decor--bottom {
+        min-height: 67px;
+    }
+
+    .header__date {
+        font-size: 50px;
+        margin-bottom: 95px;
+    }
+
+    &__warning {
+        font-size: 20px;
+        max-width: 580px;
+        padding-left: 28px;
+        position: relative;
+    }
+
+    &__warning-i {
+        display: inline-block;
+        font-size: 50px;
+        font-weight: 700;
+        color: $red1;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    @media (max-width: 991px) {
+        &__how {  
+            .how__content {
+                max-width: 700px;
+                padding: 40px 30px;
+            }
+
+            .how__pc{
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__decor--bottom {
+            min-height: 61px;
+        }
+
+        &__how {
+            min-height: 400px;
+            padding: 0;
+    
+            .how__title {
+                margin-bottom: 35px;
+            }
+    
+            .how__content {
+                padding: 25px 30px;
+            }
+        }    
+        
+        .header__date {
+            margin-bottom: 60px;
+        }
+    }
+
+    @media (max-width:576px) {
+        .header__date {
+            font-size: 30px;
+            margin-bottom: 43px;
+        }
+
+        &__warning {
+            font-size: 16px;
+            max-width: 580px;
+            padding-left: 24px;
+            position: relative;
+        }
+    
+        &__warning-i {
+            font-size: 30px;
+        }
+    }
+}

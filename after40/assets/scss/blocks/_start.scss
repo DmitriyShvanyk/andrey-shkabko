@@ -1,0 +1,19 @@
+.start {
+    &__title {
+        margin-bottom: 66px;
+
+        span {
+            color: $red1;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__container {
+            padding-bottom: 64px;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+        }
+    }
+}

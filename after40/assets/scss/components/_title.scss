@@ -1,0 +1,19 @@
+.title {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 1.26;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    @media (max-width:767px) {
+        & {
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width:576px) {
+        & {
+            font-size: 6vw;
+        }
+    }
+}

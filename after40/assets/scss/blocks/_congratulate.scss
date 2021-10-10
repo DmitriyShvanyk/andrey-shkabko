@@ -1,0 +1,140 @@
+.congratulate {
+    min-height: 675px;
+    position: relative;
+
+    &__container {
+        padding-top: 137px;
+        padding-bottom: 1px;
+    }
+
+    &__content {
+        max-width: 575px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1.32;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 60px;
+        letter-spacing: 0.01em;
+        color: $red1;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.26;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    &__decor {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    &__pict {
+        position: absolute;
+        top: 2%;
+        right: 4.7%;
+        pointer-events: none;
+        max-height: 100%;
+    }
+
+    @media (min-width:1800px) {
+        &__pict {
+            right: 15%;
+        }
+    }
+
+    @media (max-width:1200px) {
+        &__pict {
+            right: 0;
+            max-width: 50%;
+        }
+
+        &__content {
+            max-width: 50%;
+        }
+    }
+
+    @media (max-width:991px) {
+        & {
+            min-height: 575px;
+        }
+
+        &__container {
+            padding-top: 75px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__pict {
+            right: 0;
+            max-width: 50%;
+        }
+    }
+
+    @media (max-width:767px) {
+        & {
+            min-height: 575px;
+        }
+
+        &__container {
+            padding-top: 65px;            
+        }
+
+        &__content {
+            max-width: 90%;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__pict {
+            right: -100px;
+            top: -25px;
+            max-height: 254px;
+            width: 100%;
+            transform: rotate(-90deg);
+        }
+    }
+
+    @media (max-width:576px) {
+        & {
+            min-height: 375px;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__subtitle {
+            font-size: 25px;
+        }
+
+        &__lead{
+            font-size: 16px;
+            line-height: 1.26;
+        }
+    }
+
+    @media (max-width: 374px){
+        &__container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
