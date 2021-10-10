@@ -1,0 +1,38 @@
+.modules{
+    background-color: #EAC4AB;
+    min-height: 1000px;
+    position: relative;
+
+    &__container{
+        padding-top: 212px;
+        padding-bottom: 1px;
+    }
+
+    &__accordion{
+        margin-bottom: 30px;
+    }
+
+    &__lines{
+        text-align: right;
+        margin-bottom: 335px;
+    }
+
+    &__circles-1{
+        position: absolute; top: 47%; left: 71px;
+        pointer-events: none;
+    }
+
+    &__circles-2{
+        position: absolute; top: 18.5%; right: 60px;
+        pointer-events: none;
+    }
+
+    
+
+    @media (max-width: 576px){
+        &__container{
+            padding-top: 165px;
+            padding-bottom: 1px;
+        }
+    }
+}

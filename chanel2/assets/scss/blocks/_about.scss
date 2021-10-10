@@ -1,0 +1,213 @@
+.about {
+    background-color: #F4F4F4;
+
+    &__container {
+        padding-top: 170px;
+        padding-bottom: 132px;
+    }
+
+    &__items {
+        max-width: 1010px;
+        margin: 0 auto;
+    }
+
+    &__pict {
+        position: relative;
+        left: -30px;
+        height: 552px;
+        width: 387px;
+        margin-bottom: 20px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: -50px;
+            width: 453px;
+            height: 539px;
+            background-color: #FDB614;
+            transform: translateX(-50%);
+            border-radius: 50%;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -197px;
+            width: 463px;
+            height: 606px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 46.35%), #1E8BAD;
+            transform: translateX(-50%);
+            border-radius: 216px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        z-index: 9;
+    }
+
+    &__pict-caption {
+        position: relative;
+        max-width: 405px;
+        margin: 1em 0 2em -30px;
+        z-index: 9;
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        color: $white;
+    }
+
+    &__title+&__title {
+        margin-top: 55px;
+        margin-bottom: 29px;
+    }
+
+    &__line {
+        height: 2px;
+        width: 100%;
+        background-color: #2EC2F1;
+        margin: 15px 0 47px;
+    }
+
+    &__list {
+        padding-left: 0;
+        list-style: none;
+        font-size: 18px;
+        line-height: 1.333;
+        font-weight: 400;
+    }
+
+    &__list-item {
+        padding-left: 37px;
+        position: relative;
+        margin-bottom: 40px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 21px;
+            height: 21px;
+            border: 4px solid #EBC5AC;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__box {
+        max-width: 520px;
+        margin: 0 auto 110px auto;
+    }
+
+    &__caption {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 100px;
+    }
+
+    &__content {
+        font-size: 18px;
+        line-height: 1.333;
+        padding-left: 30px;
+
+        > .about__title:nth-of-type(1){
+            margin-top: 40px;
+        }
+
+        p{
+            margin-bottom: 35px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        &__container {
+            padding-top: 50px;
+            padding-bottom: 94px;
+        }
+
+        &__content {
+            margin-bottom: 96px;
+        }
+
+        &__pict {
+            left: 0;
+        }
+
+        &__pict,
+        &__pict-caption {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media (max-width:767px) {
+        &__title {
+            margin-bottom: 28px;
+            max-width: 310px;
+        }
+
+        &__title+&__title {
+            margin-top: 55px;
+            margin-bottom: 10px;
+        }
+
+        &__content {
+            font-size: 16px;
+        }
+
+        &__caption {
+            font-size: 20px;
+            margin-bottom: 45px;
+        }
+
+        &__pict-caption {
+            max-width: 270px;
+            margin: -2em auto 2em auto;
+            font-size: 14px;
+        }
+
+        &__pict {
+            text-align: center;
+            left: 0;
+            height: 341px;
+            width: auto;
+            margin-bottom: 30px;
+
+            &::before {
+                left: 50%;
+                bottom: -30px;
+                width: 329px;
+                height: 368px;
+            }
+
+            &::after {
+                bottom: -198px;
+                width: 348px;
+                height: 488px;
+            }
+        }
+
+        &__img {
+            max-width: 230px;
+            position: relative;
+        }
+
+        &__list-item {
+            padding-left: 25px;
+            margin-bottom: 19px;
+            font-size: 16px;
+
+            &::before {
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        &__line {
+            margin-bottom: 22px;
+        }
+    }
+}

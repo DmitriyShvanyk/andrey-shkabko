@@ -1,0 +1,115 @@
+.lauching {
+    background-color: #EAC4AB;
+    position: relative;
+
+    &__container {
+        padding-top: 106px;
+        padding-bottom: 66px;
+    }
+
+    &__lines {
+        margin-bottom: 160px;
+    }
+
+    &__circle {
+        position: absolute;
+        top: 0;
+        right: 4%;
+    }
+
+    &__box {
+        max-width: 1160px;
+        background-color: $white;
+        border-radius: 21px;
+        padding: 46px 76px 32px;
+        position: relative;
+        z-index: 99;
+    }
+
+    &__title {
+        font-size: 30px;
+        margin-bottom: 37px;
+    }
+
+    &__list {
+        padding-left: 0;
+        list-style: none;
+        margin: 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.35;
+        column-count: 2;
+        column-gap: 70px;
+    }
+
+    &__list-item {
+        position: relative;
+        padding-left: 35px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #E0E1E0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: 0;
+            width: 26px;
+            height: 26px;
+            border: 4px solid #F64744;
+            border-radius: 50%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__container {
+            padding-top: 55px;
+            padding-bottom: 66px;
+        }
+
+        &__box {
+            padding: 40px 25px 32px;
+        }
+
+        &__title {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        &__list {
+            font-size: 16px;
+            column-count: 1;
+            column-gap: 1;
+        }
+
+        &__list-item {
+            position: relative;
+            padding-left: 35px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid rgba(234, 196, 171, 0.5);
+
+            &::before {
+                top: 16px;
+                width: 16px;
+                height: 16px;
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: none;
+            }
+        }
+
+        &__circle {
+            top: 2%;
+            right: 2%;
+            max-height: 92px;
+            z-index: 99;
+            pointer-events: none;
+        }
+    }
+}

@@ -1,0 +1,150 @@
+.burnout {
+    position: relative;
+
+    &__container {
+        padding-top: 50px;
+        padding-bottom: 90px;
+    }
+
+    &__box {
+        max-width: 960px;
+        margin: 0 auto;
+        background: $white;
+        box-shadow: 0px 4px 20px rgba($black, .25);
+        border-radius: 21px;
+        padding: 25px 46px 30px;
+        font-weight: 500;
+        font-size: 18px;
+        position: relative;
+        z-index: 9;
+    }
+
+    &__subtitle {
+        font-size: 22px;
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__list {
+        column-count: 2;
+        max-width: 940px;
+        margin: 50px auto 10px auto;
+        padding-left: 0;
+        list-style: none;
+        line-height: 1.35;
+    }
+
+    &__list-item {
+        padding-left: 48px;
+        margin-bottom: 24px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 33px;
+            height: 27px;
+            background: url(../img/burnout/i-hand.png) no-repeat 0 0;
+            background-size: 33px 27px;
+        }
+    }
+
+    &__foot{
+        max-width: 580px;
+        margin: 0 auto;
+
+        .burnout__subtitle{
+            margin-top: 50px;
+        }
+    }
+
+    &__pict{
+        position: absolute; bottom: 5.7%; left: 0;
+        width: 100%;
+    }
+
+    &__circles{
+        position: absolute; top: -8px; left: 0;
+    }
+
+    @media (max-width: 767px) {
+        &__container {
+            padding-top: 30px;
+            padding-bottom: 63px;
+        }
+
+        &__box {            
+            box-shadow: none;
+            border-radius: 0;
+            padding: 25px 46px 30px;
+            font-weight: 500;
+            font-size: 16px;
+            max-width: calc(100% + 60px);
+            width: calc(100% + 60px);
+            margin-left: -30px;
+        }
+
+        &__subtitle {
+            margin-bottom: 55px;
+        }
+
+        &__list {
+            column-count: 1;
+            margin: 50px auto 10px auto;
+        }
+
+        &__pict{
+            position: relative; bottom: 0; left: 0;
+        }
+
+        &__pict-container{
+            width: calc(100% + 106px);
+            margin-left: -53px;
+            margin-top: 30px;
+        }
+
+        &__foot{    
+            .burnout__subtitle{
+                margin-top: 50px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+
+        &__box {       
+            max-width: calc(100% + 40px);
+            width: calc(100% + 40px);
+            margin-left: -20px;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            line-height: 1.35;
+        }
+
+        &__list-item {
+            padding-left: 28px;
+            margin-bottom: 24px;
+            position: relative;
+    
+            &::before {
+                top: 4px;
+                width: 20px;
+                height: 16px;
+                background-size: 20px 16px;
+            }
+        }
+
+        &__pict-container{
+            width: calc(100% + 86px);
+            margin-left: -43px;
+        }
+
+    }
+
+}

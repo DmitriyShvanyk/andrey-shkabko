@@ -1,0 +1,118 @@
+.accordion {
+    max-width: 645px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 99;
+
+    &__item {
+        position: relative;
+        background-color: $white;
+        padding: 20px 20px 20px 56px;
+        border-bottom: 1px solid #C4C4C4;
+        font-size: 14px;
+        line-height: 1.333;
+    }
+
+    &__head {
+        position: relative;
+        padding-right: 40px;
+        display: block;
+    }
+
+    &__head-title {
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    &__head-text {
+        display: block;
+        max-width: 450px;
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: -5px;
+        right: -3px;
+        pointer-events: none;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 1px;
+            background: #323232;
+            margin: -.5px 0 0 -10px;
+            transition: .3s ease-in;
+        }
+
+        &::after {
+            transform: rotate(-90deg);
+        }
+    }
+
+    &__content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s cubic-bezier(0, 1, 0, 1)
+    }
+
+    &__lines {
+        display: block;
+        margin-top: 28px;
+        margin-bottom: 35px;
+    }
+
+    &__list {
+        max-width: 380px;
+
+        .list__item {
+            margin-bottom: 21px;
+        }
+    }
+
+    &__control:checked~&__content {
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }
+
+    &__control:checked~&__head &__icon {
+
+        &::before,
+        &::after {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    @media (max-width:767px) {
+        &__item {
+            padding: 30px 25px 25px 25px;
+        }
+
+        &__head-title {
+            margin-bottom: 18px;
+        }
+        
+        &__lines {
+            margin-top: 21px;
+        }
+
+        &__list {
+            padding-left: 20px;
+        }
+
+        &__icon {
+            right: -10px;
+        }
+    }
+}

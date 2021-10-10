@@ -1,0 +1,60 @@
+.modules {
+    background-color: #EAC4AB;
+    min-height: 1000px;
+    position: relative;
+    padding-top: 158px;
+
+    &__container {
+        padding-top: 1px;
+        padding-bottom: 64px;
+    }
+
+    &__accordion {
+        margin-bottom: 30px;
+    }
+
+    &__lines {
+        text-align: left;
+        margin-bottom: 67px;
+    }
+
+    &__circles-1 {
+        position: absolute;
+        top: 61%;
+        left: 71px;
+        pointer-events: none;
+    }
+
+    &__circles-2 {
+        width: 215px;
+        height: 215px;
+        border: 10px solid $white;
+        border-radius: 50%;
+        position: absolute;
+        top: 18.5%;
+        right: 55px;
+        pointer-events: none;
+    }
+
+    .accordion__content {
+        max-height: 1000px;
+    }
+
+    @media (max-width: 767px) {
+        &__container {
+            padding-top: 5px;
+            padding-bottom: 55px;
+        }
+
+        &__circles-1 {
+            position: absolute;
+            top: auto;
+            bottom: 1%;
+            left: auto;
+            right: 4%;
+            max-height: 100px;
+            z-index: 99;
+            transform: scale(-1, 1) rotate(70deg);
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.footer {
+    background-color: #2C2C2C;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.333;
+    margin-top: auto;
+    color: $white;
+
+    &__container {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        max-width: 1200px;
+        text-align: center;
+    }
+
+    p+p {
+        margin-top: 3em;
+    }
+
+    @media (max-width:576px) {
+        &__container {
+            padding-top: 55px;
+            padding-bottom: 55px;
+        }
+    }
+}
