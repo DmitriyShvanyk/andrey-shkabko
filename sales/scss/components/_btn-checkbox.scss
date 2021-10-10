@@ -1,0 +1,107 @@
+.btn-checkbox {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+
+    &__text {
+        background-color: #FF9F1C;
+        display: inline-flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #000000;
+        padding: 24px 47px 24px 99px;
+        position: relative;
+    }
+
+    &__i {
+        position: absolute;
+        top: 50%;
+        left: 47px;
+        background-color: $white;
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+            content: '✔';
+            display: inline-block;
+            vertical-align: middle;
+            color: $black;
+            opacity: 0;
+        }
+    }
+
+    &__text-added {
+        display: none;
+    }
+
+    &__control:checked~&__text {
+        background-color: forestgreen;
+    }
+
+    &__control:checked~&__text &__text-add {
+        display: none;
+    }
+
+    &__control:checked~&__text &__text-added {
+        display: block;
+        color: $white;
+    }
+
+    &__control:checked~&__text &__i::before {
+        opacity: 1;
+    }
+
+    @media (max-width:991px) {
+        &__text {
+            font-size: 18px;
+            padding: 20px 40px 20px 88px;
+        }
+
+        &__i {
+            left: 40px;
+            width: 24px;
+            height: 24px;
+            margin-top: -12px;
+        }
+    }
+
+    @media (max-width:768px) {
+        &__text {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width:767px) {
+        & {
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width:576px) {
+        & {
+            margin-top: 30px;            
+        }
+
+        &__text {
+            font-size: 3.7vw;
+            width: 100%;
+            padding: 18px 35px 18px 70px;
+            justify-content: center;
+        }
+
+        &__i {
+            left: 15%;
+        }
+    }
+}

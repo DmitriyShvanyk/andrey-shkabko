@@ -1,0 +1,150 @@
+.header {
+  &__container {
+    padding-top: 79px;
+    padding-bottom: 39px;
+    position: relative;
+    z-index: 99;
+    background: $white;
+    box-shadow: 0px 4px 20px rgba(202, 213, 234, 0.5);
+  }
+
+  &__inner {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.465;
+    color: #EF233C;
+    margin-bottom: 80px;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__columns {
+    display: flex;
+    align-items: center;
+    margin: 0 -20px;
+  }
+
+  &__column {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 50%;
+    max-width: 50%;
+  }
+
+  &__column .header__pict {
+    position: relative;
+    left: 10px;
+  }
+
+  &__columns--1 {
+    margin-bottom: 88px;
+  }
+
+  &__columns--2 {
+    flex-direction: row-reverse;
+    margin-bottom: 75px;
+
+    .header__pict {
+      position: relative;
+      left: 60px;
+    }
+
+    .header__text {
+      margin-left: 20px;
+    }
+  }
+
+
+  &__cd {
+    margin-bottom: 50px;
+
+    .title {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__cd-pict {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
+  @media (max-width: 1200px) {
+    &__column .header__pict {
+      left: 0;
+    }
+
+    &__columns--2 {
+      margin-bottom: 75px;
+
+      .header__pict {
+        left: 0;
+      }
+
+      .header__text {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__container {
+      padding-top: 16px;
+      padding-bottom: 39px;
+    }
+
+    &__title {
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+
+    &__columns {
+      display: block;
+    }
+
+    &__columns--1 {
+      margin-bottom: 70px;
+    }
+
+    &__columns--2 {
+      margin-bottom: 0;
+    }
+
+    &__column {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &__pict {
+      margin-bottom: 32px;
+    }
+
+    &__cd {
+      margin-bottom: 20px;
+  
+      .title {
+        margin-bottom: -15px;
+      }
+    }
+
+    &__cd-pict {
+      width: calc(100% + 100px);
+      margin-left: -50px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    &__title {
+      font-size: 20px;
+    }
+  }
+
+}

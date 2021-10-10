@@ -1,0 +1,22 @@
+.garant{
+    background-color: $white;
+    text-align: center;
+    width: calc(100% + 52px);
+    margin-left: -26px;
+
+    &__container{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    @media (max-width:576px){
+        &__img{
+            max-height: 350px;
+        }
+    }
+}
