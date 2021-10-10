@@ -1,0 +1,96 @@
+.s7 {
+    background: #E6A235;
+
+    &__container {
+        padding-top: 94px;
+        padding-bottom: 90px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 85px;
+    }
+
+    @media (max-width: 991px) {
+        &__title {
+            margin-bottom: 55px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__container {
+            padding-top: 68px;
+            padding-bottom: 57px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.accordion {
+    max-width: 760px;
+    margin: 0 auto;
+
+    &__item {
+        position: relative;
+        background-color: $white;
+        padding: 25px 20px;
+        margin-bottom: 2px;
+    }
+
+    &__head{
+        position: relative;
+        font-weight: bold;
+        font-size: 20px;
+        padding-right: 40px;
+        display: block;
+    }
+
+    &__icon{
+        width: 40px;
+        height: 40px;
+        position: absolute; top: -5px; right: 0;
+        pointer-events: none;
+
+        &::before,
+        &::after{
+            content: '';
+            position: absolute; top: 50%; left: 50%;
+            width: 24px;
+            height: 2px;
+            background: #323232;
+            margin: -1px 0 0 -12px;
+            transform: rotate(45deg);
+        }
+
+        &::after{
+            transform: rotate(-45deg);
+        }
+    }
+
+    &__content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s cubic-bezier(0, 1, 0, 1)
+    }
+
+    &__control:checked~&__content {
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }
+
+    @media (max-width:767px){
+        &__icon{
+            right: -10px;
+        }
+    }
+}
