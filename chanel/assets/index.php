@@ -720,52 +720,45 @@
 			Примите участие в онлайн-курсе<br> «АВТОВОРОНКИ С НУЛЯ»
 		</h3>
 		<div class="order-form">
-			<form id="ltForm5834108"  action="https://smaylinaonline.getcourse.ru/pl/lite/block-public/process-html?id=1177044066" method="post" data-open-new-window="0" data-xp="completed_on_valid_required: true">
+			<form id="ltForm7150366"  action="https://school.smaylina.online/pl/lite/block-public/process-html?id=1188328635" method="post" data-open-new-window="0">
 				<input type="hidden" name="formParams[setted_offer_id]" >
-				<input type="hidden" name="formParams[userCustomFields][145331]" value="<?=$_GET['ID_VK']?>" >
-				<input type="hidden" name="formParams[userCustomFields][276653]" value="<?=$_GET['roistat']?>" >
-				<input type="hidden" name="formParams[userCustomFields][276654]" value="<? echo $tidVar ?>"> <!-- inpur for tid -->
-				<input type="hidden" name="formParams[dealCustomFields][405421]" value="<?=$_GET['utm_source']?>" >
-				<input type="hidden" name="formParams[dealCustomFields][405422]" value="<?=$_GET['utm_medium']?>" >
-				<input type="hidden" name="formParams[dealCustomFields][405423]" value="<?=$_GET['utm_campaign']?>" >
-				<input type="hidden" name="formParams[dealCustomFields][405424]" value="<?=$_GET['utm_content']?>" >
-				<input type="hidden" name="formParams[dealCustomFields][405425]" value="<?=$_GET['utm_term']?>" >
-				<input type="hidden" name="formParams[userCustomFields][345656]" value="<?=$_GET['cid']?>" >
 				<div class="field">
-					<input type="text" name="formParams[full_name]" placeholder="Имя" data-xp="required: true, valid: /^[a-zа-яё0-9 \-\.]+$/gi" class="input" value="" required>
+					<input type="text" name="formParams[first_name]" placeholder="Имя" class="input" value="" required>
 				</div>
 				<div class="field">
-					<input type="email" name="formParams[email]" placeholder="E-mail" data-xp="type: 'email', required: true" class="input" value="" required>
+					<input type="email" name="formParams[email]" placeholder="E-mail" class="input" value="" required>
 				</div>
 				<div class="field">
-					<input type="tel" name="formParams[phone]" placeholder="Телефон" data-xp="type: 'phone', required: true" class="input" value="" required>
+					<input type="tel" name="formParams[phone]" placeholder="Телефон" class="input" value="" required>
 				</div>
 				<div class="submit">
-					<button class="submit-btn" type="submit" id="button3220072" 
-						onclick="if(window['btnprs61600b4f71247']){return false;}window['btnprs61600b4f71247']=true;setTimeout(function(){window['btnprs61600b4f71247']=false},6000);return true;" data-xp="enabled_on_completed: true" disabled="disabled"><span>Продолжить</span></button>
+					<button class="submit-btn" type="submit" id="button973817"
+					onclick="if(window['btnprs616971d3f1bd3']){return false;}window['btnprs616971d3f1bd3']=true;setTimeout(function(){window['btnprs616971d3f1bd3']=false},6000);return true;">
+						<span>Продолжить</span>
+					</button>
 					<div class="agreement">
-						Нажимая на&nbsp;кнопку «Продолжить», вы&nbsp;принимаете условия <a href="http://stroyneyu.ru/docs/offer.html" target="_blank">оферты</a> и&nbsp;даете согласие на&nbsp;обработку ваших <a href="http://stroyneyu.ru/docs/privacy.html" target="_blank">персональных данных</a>.
+						Нажимая на&nbsp;кнопку «Продолжить», вы&nbsp;принимаете условия <a href="https://school.smaylina.online/docs/offer.html" target="_blank">оферты</a> и&nbsp;даете согласие на&nbsp;обработку ваших <a href="https://school.smaylina.online/docs/privacy.html" target="_blank">персональных данных</a>.
 					</div>
 					<div class="alert" onclick="alert('Для продолжения необходимо заполнить все поля.');"></div>
 				</div>
 				<div>
-					<input type="hidden" id="49902461600b4f60c7d" name="__gc__internal__form__helper" class="__gc__internal__form__helper" value="">
-					<input type="hidden" id="49902461600b4f60c7dref" name="__gc__internal__form__helper_ref" class="__gc__internal__form__helper_ref" value="">
-					<input type="hidden" name="requestTime" value="1633684303">
-					<input type="hidden" name="requestSimpleSign" value="7d4b2fa2c7824bb03ef58011403dd795">
-					<input type="hidden" name="isHtmlWidget" value="1"/>
+					<input type="hidden" id="504461616971d3e4629" name="__gc__internal__form__helper" class="__gc__internal__form__helper" value="">
+<input type="hidden" id="504461616971d3e4629ref" name="__gc__internal__form__helper_ref" class="__gc__internal__form__helper_ref" value="">
+<input type="hidden" name="requestTime" value="1634300371">
+<input type="hidden" name="requestSimpleSign" value="70fcf670fe8a46e7d4765c5734e211e2">
+<input type="hidden" name="isHtmlWidget" value="1"/>
 				</div>
 			</form>
 			<span id="gccounterImgContainer"></span>
 			<script>
 				window.onload = function(){
-					let loc = document.getElementById("49902461600b4f60c7d");
-					loc.value = window.location.href;
-					let ref = document.getElementById("49902461600b4f60c7dref");
-					ref.value = document.referrer;
+					let loc = document.getElementById("504461616971d3e4629");
+		loc.value = window.location.href;
+		let ref = document.getElementById("504461616971d3e4629ref");
+		ref.value = document.referrer;
 
-					let statUrl = "https://online.stroyneyu.ru/stat/counter?ref=" + encodeURIComponent(document.referrer)
-					+ "&loc=" + encodeURIComponent(document.location.href);
+					let statUrl = "https://school.smaylina.online/stat/counter?ref=" + encodeURIComponent(document.referrer)
+			+ "&loc=" + encodeURIComponent(document.location.href);
 					document.getElementById('gccounterImgContainer').innerHTML
 					= "<img width=1 height=1 style='display:none' id='gccounterImg' src='" + statUrl + "'/>";
 				}
