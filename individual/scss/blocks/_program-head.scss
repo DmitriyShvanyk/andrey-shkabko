@@ -1,0 +1,51 @@
+.program-head {
+    background-color: #CFA409;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &__container {
+        padding-top: 51px;
+        padding-bottom: 8px;
+    }
+
+    &__title {
+        color: $white;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 1.17;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    &__star {
+        color: #FFE99B;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @media (max-width: 767px) {
+        &__container {
+            padding-top: 51px;
+            padding-bottom: 25px;
+        }
+
+        &__title {
+            font-size: 45px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        &__container {
+            padding-bottom: 30px;
+        }
+
+        &__title {
+            font-size: 11.1vw;
+        }
+    }
+}

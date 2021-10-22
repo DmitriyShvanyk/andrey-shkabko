@@ -1,0 +1,23 @@
+.footer {
+  background-color: #171717;
+
+  &__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: rgba($white,.7);
+  }
+
+  @media (max-width:767px) {
+    &__container {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width:576px) {
+    &__container {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@charset 'utf-8';
+
+/* ==================== PLUGINS ==================== */
+
+@import url(../vendor/fancybox/jquery.fancybox.min.css);
+
+
+/* ==================== ABSTRACTS ==================== */
+
+@import 'abstracts/variable';
+
+
+/* ==================== BASE ==================== */
+
+@import 'base/normalize';
+@import 'base/grid';
+@import 'base/basic';
+@import 'base/fonts';
+
+
+/* ==================== COMPONENTS ==================== */
+
+@import 'components/menu';
+@import 'components/container';
+@import 'components/btn';
+@import 'components/title';
+@import 'components/subtitle';
+@import 'components/lead';
+@import 'components/heading';
+@import 'components/form';
+
+
+
+
+
+/* ==================== BLOCKS ==================== */
+
+@import 'blocks/navbar';
+@import 'blocks/header';
+@import 'blocks/garant';
+@import 'blocks/program-head';
+@import 'blocks/instrument';
+@import 'blocks/facts';
+@import 'blocks/due-to';
+@import 'blocks/results';
+@import 'blocks/app';
+@import 'blocks/causes';
+@import 'blocks/underway';
+@import 'blocks/bonuses';
+@import 'blocks/study';
+@import 'blocks/author';
+@import 'blocks/footer';
