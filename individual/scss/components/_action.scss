@@ -1,0 +1,134 @@
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateReverse {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(.25);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(.25);
+    }
+}
+
+
+.action {
+    max-width: 131px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+    pointer-events: none;
+
+    &__head {
+        position: relative;
+        margin-bottom: 6px;
+    }
+
+    &__head,
+    &__body {
+        max-width: 131px;
+        width: 100%;
+    }
+
+    &__circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 91px;
+        height: 91px;
+        background-color: #4C3BA1;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        transform: rotate(15.85deg);
+        border-radius: 50%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__circle-border {
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        bottom: -2px;
+        right: -2px;
+        border: 2px dashed #B50303;
+        border-radius: 50%;
+        animation: rotate 10s linear infinite;
+        pointer-events: none;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            bottom: -6px;
+            right: -6px;
+            border: 3px dashed #CFA309;
+            border-radius: 50%;
+            animation: rotateReverse 5s linear infinite;
+            pointer-events: none;
+        }
+    }
+
+    &__text {
+        color: #EFBE12;        
+    }
+
+    &__discount {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 1;
+    }
+
+    &__star {
+        position: absolute;
+        pointer-events: none;
+        width: 29px;
+        height: 29px;
+        color: #CFA409;
+        animation: scale 10s linear infinite;
+    }
+
+    &__star--1 {
+        bottom: 3%;
+        left: -14px;     
+        transform: rotate(-7deg);           
+    }
+
+    &__star--2,
+    &__star--3{
+        width: 14px;
+        height: 14px;
+    }
+
+    &__star--2 {
+        top: 6%;
+        right: -1px;
+        transform: rotate(-15deg);
+        animation-delay: 1s;
+    }
+
+    &__star--3 {
+        bottom: 0;
+        right: -6px;
+        transform: rotate(15deg);
+        animation-delay: 2s;
+    }
+
+    &__caption {
+        padding: 3px 8px;
+        color: #3E2AA5;
+        background-color: #FFE99B;
+        filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+    }
+}

@@ -1,7 +1,10 @@
 .underway {
-    min-height: 1940px;
-    background: #FFFDF5 url(../img/underway/bg.png) no-repeat center top;
-    background-size: cover;
+    min-height: 1940px;    
+
+    &--bg {
+        background: #FFFDF5 url(../img/underway/bg.png) no-repeat center top;
+        background-size: cover;
+    }
 
     &__container {
         padding-top: 127px;
@@ -77,7 +80,10 @@
 
     @media (max-width: 767px) {
         & {
-            min-height: 2629px;
+            min-height: 2629px;            
+        }
+
+        &--bg {
             background: $white url(../img/underway/bg-m.png) no-repeat center top;
             background-size: cover;
         }

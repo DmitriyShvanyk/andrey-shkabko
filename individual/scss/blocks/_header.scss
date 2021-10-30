@@ -72,6 +72,7 @@
     color: #232323;
     margin-bottom: 31px;
     font-family: $fontFuturaNormal;
+    margin-bottom: 2.1em;
   }
 
   &__alert {
@@ -83,7 +84,7 @@
     background: radial-gradient(65.87% 291.79% at 50% 50%, #715BE2 0%, #4C3BA2 100%);
     box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
     border-radius: 21px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
 
   &__push {
@@ -142,27 +143,18 @@
     letter-spacing: .35px;
   }
 
-  &__free {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: -49px;
-    left: 47%;
-    transform: translateX(-50%);
-  }
-
-  &__free-icon {
-    width: 20px;
-    height: 59px;
-  }
-
   &__arrow {
     position: absolute;
     top: 0;
     left: -30px;
     pointer-events: none;
     z-index: -1;
+  }
+
+  &__action {
+    position: absolute;
+    top: 26%;
+    right: 6%;
   }
 
   @media (min-width: 1201px) {
@@ -172,11 +164,29 @@
       top: -45px;
       left: -50px;
     }
+
+    &__push-body {
+      .btn {
+        min-width: 460px;
+      }
+    }
   }
 
   @media (max-width: 1024px) {
     &__container {
-      padding-top: 65px;
+      padding-top: 75px;
+    }
+
+    &__action {
+      position: relative;
+      top: 0;
+      right: 0;
+      margin-top: -125px;
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      max-width: 100%;
     }
   }
 
@@ -208,7 +218,7 @@
     }
 
     &__list {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     &__alert {
@@ -218,14 +228,6 @@
 
     &__caption {
       bottom: -2%;
-    }
-
-    &__free {
-      position: relative;
-      bottom: 0;
-      left: -10px;
-      transform: translateX(0);
-      margin-bottom: 43px;
     }
 
     &__push-head {
@@ -249,11 +251,17 @@
     &__push-body {
       text-align: center;
     }
+
+    &__action {            
+      margin-top: -45px;
+    }
   }
 
   @media (max-width: 576px) {
     &__title {
       font-size: 8.75vw;
+      text-align: left;
+      padding-left: 6vw;
     }
 
     &__list {
@@ -272,6 +280,10 @@
     &__list-i {
       width: 10px;
       height: 10px;
+    }
+
+    &__action {
+      margin-top: -85px;
     }
   }
 }
