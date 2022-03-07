@@ -1,0 +1,133 @@
+.chema {
+    position: relative;
+
+    .chema__container {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+
+    .title-custom {
+        margin-bottom: 32px;
+    }
+
+    .chema__lead {
+        max-width: 1170px;
+        margin: 0 auto 55px auto;
+    }
+
+    .chema__pict {
+        position: absolute;
+        bottom: 90px;
+        right: -65px;
+        pointer-events: none;
+        max-width: 600px;
+    }
+
+    .chema__slider-head {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 3em;
+        padding-right: 3em;
+        text-align: center;
+        min-height: 144px;
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: none;
+
+        &::after {
+            content: '';
+            position: absolute; bottom: 0; left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #0250C5 0%, #16375F 100%);
+            border-radius: 0px 5px 5px 0px;
+        }
+    }
+
+    .chema__slider-content {
+        padding-top: 20px;
+    }
+
+    .chema__slider-head,
+    .chema__slider-content {
+        font-size: 25px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+        top: 60px;
+        margin-top: 0;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .swiper-button-next {
+        right: 25px;
+    }
+
+    .swiper-button-prev {
+        left: 25px;
+    }
+
+    @media (max-width: 1440px) {
+        .chema__pict {
+            bottom: 40px;
+            right: -65px;
+            max-width: 400px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .chema__pict {
+            max-width: 300px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .chema__container {
+            padding-top: 60px;
+            padding-bottom: 20px;
+        }
+
+        .chema__pict {
+            position: relative; top: 0; left: 0;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .chema__lead {
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .title-custom {
+            margin-bottom: 12px;
+        }
+
+        .chema__pict {
+            max-width: 100%;
+            margin: -20px auto 0 auto;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .title-custom {
+            text-align: left!important;
+            padding-left: 10px;
+        }
+
+        .chema__slider-head,
+        .chema__slider-content {
+            font-size: 5.8vw;
+        }
+    }
+}

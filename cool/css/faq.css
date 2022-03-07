@@ -1,0 +1,163 @@
+.faq {
+  position: relative;
+}
+
+.faq .faq__container {
+  padding-top: 60px;
+  padding-bottom: 280px;
+}
+
+.faq .title-custom--h2 {
+  margin-bottom: 74px;
+}
+
+.faq .faq__block {
+  padding: 85px 55px 25px;
+}
+
+.faq .faq__decor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+  .faq .faq__container {
+    padding-bottom: 100px;
+  }
+  .faq .faq__block {
+    padding: 55px 30px 25px;
+  }
+  .faq .faq__decor {
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .faq .faq__block {
+    padding: 20px 15px 15px;
+  }
+  .faq .title-custom--h2 {
+    margin-bottom: 40px;
+  }
+}
+
+.accordion .accordion__item {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.accordion .accordion__control {
+  display: none;
+}
+
+.accordion .accordion__circle--open {
+  display: none;
+}
+
+.accordion .accordion__label {
+  display: block;
+  position: relative;
+  padding-left: 100px;
+  cursor: pointer;
+}
+
+.accordion .accordion__circle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.accordion .accordion__label-text {
+  display: block;
+  line-height: 1.4;
+  padding-left: 10px;
+  font-weight: normal;
+  font-size: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#0250C5), to(#16375F));
+  background: -webkit-linear-gradient(left, #0250C5, #16375F);
+  background: -o-linear-gradient(left, #0250C5, #16375F);
+  background: linear-gradient(to right, #0250C5, #16375F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.accordion .accordion__content {
+  padding-top: 30px;
+}
+
+.accordion .accordion__content ul,
+.accordion .accordion__content ol {
+  padding-left: 50px;
+}
+
+.accordion .accordion__content li + li {
+  margin-top: 15px;
+}
+
+.accordion .accordion__content,
+.accordion .accordion__control:checked + .accordion__label .accordion__circle {
+  display: none;
+}
+
+.accordion .accordion__control:checked + .accordion__label .accordion__circle--open,
+.accordion .accordion__control:checked ~ .accordion__content {
+  display: block;
+}
+
+@media (max-width: 1440px) {
+  .accordion .accordion__label-text {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .accordion .accordion__circle {
+    width: 40px;
+    height: 40px;
+  }
+  .accordion .accordion__label {
+    padding-left: 50px;
+  }
+  .accordion .accordion__label-text {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .accordion .accordion__item {
+    margin-bottom: 50px;
+  }
+  .accordion .accordion__label-text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .accordion .accordion__item {
+    margin-bottom: 30px;
+  }
+  .accordion .accordion__label-text {
+    font-size: 24px;
+  }
+  .accordion .accordion__content {
+    padding-top: 10px;
+  }
+  .accordion .accordion__content ul,
+  .accordion .accordion__content ol {
+    padding-left: 40px;
+  }
+  .accordion .accordion__content li + li {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .accordion .accordion__label-text {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,125 @@
+.prison .prison__container {
+  padding-top: 60px;
+  padding-bottom: 125px;
+}
+
+.prison .title-custom--h2 {
+  margin-bottom: 70px;
+}
+
+.prison .title-custom--h3 {
+  margin-bottom: 15px;
+}
+
+.prison .prison__inner {
+  min-height: 976px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.prison .prison__item {
+  position: relative;
+  z-index: 1;
+}
+
+.prison .prison__item ul {
+  margin-top: 0;
+  padding-left: 60px;
+}
+
+.prison .prison__item + .prison__item {
+  margin-top: 110px;
+}
+
+.prison .prison__pict {
+  position: absolute;
+  top: 50%;
+  right: -13%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  max-height: 100%;
+}
+
+@media (max-width: 1440px) {
+  .prison .title-custom--h3 {
+    font-size: 40px;
+  }
+  .prison .prison__pict {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .prison .prison__container {
+    padding-bottom: 80px;
+  }
+  .prison .prison__inner {
+    min-height: 800px;
+  }
+  .prison .title-custom--h2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .prison .prison__inner {
+    display: block;
+    min-height: 1px;
+    margin-bottom: 40px;
+  }
+  .prison .title-custom--h3 {
+    margin-bottom: 20px;
+  }
+  .prison .prison__item + .prison__item {
+    margin-top: 50px;
+  }
+  .prison .prison__pict {
+    position: relative;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+    text-align: center;
+    margin: 10px auto -10px auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .prison .prison__container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .prison .prison__item {
+    font-size: 25px;
+  }
+  .prison .prison__item ul {
+    padding-left: 40px;
+  }
+  .prison .prison__pict {
+    width: -webkit-calc(100% + 180px);
+    width: calc(100% + 180px);
+    max-width: -webkit-calc(100% + 180px);
+    max-width: calc(100% + 180px);
+    left: -100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .prison .title-custom--h2 {
+    font-size: 6vw;
+  }
+  .prison .title-custom--h3 {
+    font-size: 8.5vw;
+  }
+}

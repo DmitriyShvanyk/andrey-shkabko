@@ -1,0 +1,41 @@
+.why {
+  margin-top: -41px;
+}
+
+.why .why__container {
+  padding-top: 1px;
+  position: relative;
+}
+
+.why .why__bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.why .why__inner {
+  position: relative;
+  z-index: 9;
+}
+
+.why .title-custom {
+  margin-bottom: 55px;
+}
+
+@media (max-width: 1440px) {
+  .why {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .why .title-custom {
+    text-align: left !important;
+    margin-bottom: 21px;
+    padding-left: 10px;
+  }
+}

@@ -1,0 +1,124 @@
+.prison {
+    .prison__container {
+        padding-top: 60px;
+        padding-bottom: 125px;
+    }
+
+    .title-custom--h2 {
+        margin-bottom: 70px;
+    }
+
+    .title-custom--h3 {
+        margin-bottom: 15px;
+    }
+
+    .prison__inner {
+        min-height: 976px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .prison__item {
+        position: relative;
+        z-index: 1;
+
+        ul {
+            margin-top: 0;
+            padding-left: 60px;
+        }
+    }
+
+    .prison__item+.prison__item {
+        margin-top: 110px;
+    }
+
+    .prison__pict {
+        position: absolute;
+        top: 50%;
+        right: -13%;
+        transform: translateY(-50%);
+        max-height: 100%;
+    }
+
+    @media (max-width: 1440px) {
+        .title-custom--h3 {
+            font-size: 40px;
+        }
+
+        .prison__pict {
+            max-width: 80%;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .prison__container {
+            padding-bottom: 80px;
+        }
+
+        .prison__inner {
+            min-height: 800px;
+        }
+
+        .title-custom--h2 {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .prison__inner {
+            display: block;
+            min-height: 1px;
+            margin-bottom: 40px;
+        }
+
+        .title-custom--h3 {
+            margin-bottom: 20px;
+        }
+
+        .prison__item+.prison__item {
+            margin-top: 50px;
+        }
+
+        .prison__pict {
+            position: relative;
+            top: 0;
+            right: 0;
+            transform: translateY(0%);
+            text-align: center;
+            margin: 10px auto -10px auto;
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .prison__container {
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
+
+        .prison__item {
+            font-size: 25px;
+            ul {
+                padding-left: 40px;
+            }
+        }
+
+        .prison__pict {
+            width: calc(100% + 180px);
+            max-width: calc(100% + 180px);
+            left: -100px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .title-custom--h2 {
+            font-size: 6vw;
+        }
+
+        .title-custom--h3 {
+            font-size: 8.5vw;
+        }
+    }
+}

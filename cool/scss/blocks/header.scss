@@ -1,0 +1,208 @@
+.header {
+    position: relative;
+
+    .header__container {
+        padding-top: 2.2em;
+        padding-bottom: 1px;
+        z-index: 9;
+    }
+
+    .header__logo {
+        transition: opacity .3s ease;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    .header__logo-img {
+        max-height: 62px;
+    }
+
+    .header__date-container {
+        text-align: right;
+        margin-top: 25px;
+        margin-right: -20px;
+        margin-bottom: 15px;
+    }
+
+    .header__date {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        font-weight: 800;
+        font-size: 25px;
+        color: rgba(255, 255, 255, .8);
+    }
+
+    .header__date-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-height: 103px;
+        pointer-events: none;
+        min-height: 103px;
+        min-width: 331px;
+    }
+
+    .header__date-text {
+        position: relative;
+        z-index: 1;
+    }
+
+    .title-custom {
+        margin-bottom: .5em;
+    }
+
+    .header__lead {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-style: italic;
+        letter-spacing: -1px;
+        position: relative;
+        margin-bottom: 65px;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 40px;
+            width: calc(100% - 40px);
+            height: 1px;
+            background-color: #6D6D6D;
+        }
+
+        &::after {
+            top: auto;
+            bottom: 0;
+            left: auto;
+            right: 40px;
+        }
+    }
+
+    .header__quote {
+        position: absolute;
+        top: -22px;
+        left: 0;
+        font-weight: 300;
+        font-size: 60px;
+        color: #6D6D6D;
+    }
+
+    .header__quote--2 {
+        top: auto;
+        bottom: -50px;
+        left: auto;
+        right: 0;
+    }
+
+    .header__decor {
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        pointer-events: none;
+    }
+
+    @media (min-width: 1500px) {
+        .header__pict {
+            min-width: 980px;
+            position: relative;
+            top: -80px;
+            left: -45px;
+        }
+    }
+
+    @media (max-width: 1440px) {
+        .header__decor {
+            bottom: 0;
+            left: 0;
+            max-height: 300px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .header__container {
+            padding-bottom: 100px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        & {
+            text-align: center;
+        }
+
+        .header__container {
+            padding-top: 30px;
+        }
+
+        .header__logo,
+        .header__logo-img {
+            display: block;
+        }
+
+        .header__pict {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .header__decor {
+            max-width: 100px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .header__container {
+            padding-top: 15px;
+            padding-bottom: 35px;
+        }
+
+        .header__logo {
+            margin-bottom: 43px;
+        }
+
+        .header__date-container {
+            margin-right: 0px;
+            margin-bottom: 1.75em;
+        }
+
+        .header__date {
+            font-size: 20px;
+            padding-left: .6em;
+            padding-right: .6em;
+        }
+
+        .header__date-img {
+            max-height: 79px;
+            min-height: 79px;
+            min-width: 255px;
+        }
+
+        .header__decor {
+            max-width: 100px;
+            bottom: 6%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .title-custom {
+            font-size: 9.35vw;
+            margin-bottom: 45px;
+        }
+
+        .header__lead {
+            padding: 20px;
+            margin-bottom: 60px;
+            line-height: 1.25;
+            text-align: left;
+        }
+
+        .header__pict {
+            position: relative; left: -20px;
+            margin-top: 15px;
+        }
+    }
+}

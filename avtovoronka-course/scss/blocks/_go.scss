@@ -1,0 +1,45 @@
+.go {
+    background-color: $white;
+
+    &__container {
+        padding-top: 125px;
+        padding-bottom: 125px;
+    }
+
+    &__box {
+        padding: 107px 110px 92px;
+        text-align: center;
+        max-width: 690px;
+        width: 100%;
+        margin: 0 auto;
+        border: 4px solid #2EC2F1;
+        filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+        border-radius: 21px;
+    }
+
+    &__title {
+        margin-bottom: 67px;
+    }
+
+    .btn-container {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 767px) {
+        &__container {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        &__box {
+            padding: 32px 25px 60px;
+        }
+    
+        &__title {
+            margin-bottom: 55px;
+            font-size: 18px;
+        }
+    }
+
+}
