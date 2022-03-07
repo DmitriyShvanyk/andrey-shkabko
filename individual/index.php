@@ -25,10 +25,10 @@
 	<link rel="preload" href="fonst/GothamPro-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 
 	<!-- preload style -->
-	<link rel="preload" href="css/style.min.css?v=380" as="style">
+	<link rel="preload" href="css/style.min.css?v=360" as="style">
 
 	<!-- main style -->
-	<link href="css/style.min.css?v=380" rel="stylesheet">
+	<link href="css/style.min.css?v=360" rel="stylesheet">
 </head>
 
 <body class="root" id="root">
@@ -1045,7 +1045,7 @@
 	<!--footer.end-->
 
 	<!--scripts.begin-->
-	<script defer src="js/scripts.js?v=380"></script>	
+	<script defer src="js/scripts.js?v=360"></script>	
 	<script>
 		function loadScript(src){
 			const body = document.querySelector('body')

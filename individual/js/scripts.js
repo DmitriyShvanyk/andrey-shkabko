@@ -217,6 +217,11 @@
 	</div>
 </div>`
 
+setTimeout(() => {
+	resultsItems.innerHTML = resultsItemsContent
+}, 3000)
+
+
 	const formContainer = document.querySelectorAll('.form-container')
 	const formApp = `<form class="form app__form" id="ltForm6248138" action="https://online.stroyneyu.ru/pl/lite/block-public/process-html?id=1193067134" method="post" data-open-new-window="0">
 	<input type="hidden" name="formParams[setted_offer_id]" >
@@ -258,11 +263,11 @@
 			</div>
 		</div>
 	</div>
-	<input name="formParams[dealCustomFields][405421]"  type="hidden" value="<?=$_GET['utm_source']?>" >
-	<input name="formParams[dealCustomFields][405422]"  type="hidden" value="<?=$_GET['utm_medium']?>" >
-	<input name="formParams[dealCustomFields][405423]"  type="hidden" value="<?=$_GET['utm_campaign']?>" >
-	<input name="formParams[dealCustomFields][405424]"  type="hidden" value="<?=$_GET['utm_content']?>" > 
-	<input name="formParams[dealCustomFields][405425]"  type="hidden" value="<?=$_GET['utm_term']?>" >
+	<input name="formParams[dealCustomFields][405421]"  type="hidden" value="">
+	<input name="formParams[dealCustomFields][405422]"  type="hidden" value="">
+	<input name="formParams[dealCustomFields][405423]"  type="hidden" value="">
+	<input name="formParams[dealCustomFields][405424]"  type="hidden" value=""> 
+	<input name="formParams[dealCustomFields][405425]"  type="hidden" value="">
 
 	<input type="hidden" id="5096766172279d26cd0" name="__gc__internal__form__helper" class="__gc__internal__form__helper" value="">
 	<input type="hidden" id="5096766172279d26cd0ref" name="__gc__internal__form__helper_ref" class="__gc__internal__form__helper_ref" value="">
@@ -282,18 +287,28 @@
 		document.getElementById('gccounterImgContainer').innerHTML
 			= "<img width=1 height=1 style='display:none' id='gccounterImg' src='" + statUrl + "'/>";
 	});
-</script>`
+</script>`	
 
-	setTimeout(() => {
-		resultsItems.innerHTML = resultsItemsContent
-	}, 3000)
+	function getUTM(){
+		const urlString = window.location.href
+		const url = new URL(urlString)
+		document.querySelector('[name="formParams[dealCustomFields][405421]"]').value = url.searchParams.get("utm_source")
+		document.querySelector('[name="formParams[dealCustomFields][405422]"]').value = url.searchParams.get("utm_medium")
+		document.querySelector('[name="formParams[dealCustomFields][405423]"]').value = url.searchParams.get("utm_campaign")
+		document.querySelector('[name="formParams[dealCustomFields][405424]"]').value = url.searchParams.get("utm_content")
+		document.querySelector('[name="formParams[dealCustomFields][405425]"]').value = url.searchParams.get("utm_term")
+	}
 
 	formContainer.forEach(el => {
 		setTimeout(() => {
 			el.innerHTML = formApp
+			getUTM()
 		}, 3000)
 	})
 
+
+	
+	
 
 
 
